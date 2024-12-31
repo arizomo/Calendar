@@ -1,0 +1,81 @@
+/* Contenedor principal del calendario */
+.calendar-container {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Estilo del encabezado */
+.calendar-header {
+  margin-bottom: 30px;
+}
+
+.calendar-header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #0073e6;
+}
+
+.calendar-header h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #555;
+}
+
+/* Contenedor de los meses */
+.calendar-months {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Estilo para cada mes */
+.month {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.month h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #0073e6;
+}
+
+/* Tabla del calendario */
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar-table th,
+.calendar-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.calendar-table th {
+  background-color: #0073e6;
+  color: white;
+  font-weight: bold;
+}
+
+.calendar-table td {
+  cursor: pointer;
+}
+
+.calendar-table td.holiday {
+  background-color: #ffe6e6;
+  color: #d9534f;
+  font-weight: bold;
+}
+
+.calendar-table td.today {
+  background-color: #dff0d8;
+  font-weight: bold;
+}
