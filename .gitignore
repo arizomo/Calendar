@@ -1,21 +1,30 @@
 # Angular build artifacts
-dist/
-tmp/
-out-tsc/
-.angular/
-bazel-out/
+**/dist/
+**/tmp/
+**/out-tsc/
+**/.angular/
+**/bazel-out/
 
 # Node.js dependencies
-node_modules/
+**/node_modules/
 
 # Logs
 npm-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# IDEs
+# Test coverage and reports
+**/coverage/
+testem.log
+libpeerconnection.log
+connect.lock
+
+# IDEs and editors
 .idea/
 .vscode/
 .history/
+*.sublime-workspace
+*.code-workspace
 
 # VS Code exceptions (optional)
 !.vscode/settings.json
@@ -23,19 +32,13 @@ yarn-error.log*
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# Environment files
-.env
-.env.*
-
-# Coverage and reports
-coverage/
-testem.log
-libpeerconnection.log
-connect.lock
-
-# OS
+# OS generated files
 .DS_Store
 Thumbs.db
 
 # Sass
 .sass-cache/
+
+# Environment files
+.env
+.env.*
